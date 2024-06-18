@@ -3,6 +3,36 @@
     padding: 0;
 }
 
+:root{
+    --font: "MedievalSharp", cursive;
+    --text-color: #D9D5D5;
+    --box-color: #262323;
+    --cta-button: #DEA96D;
+    --save-button: #548150;
+    --info-boxes: #AA9B93;
+    --border-radius: 14px;
+}
+
 body{
     background-image: url(images/background.png);
+    font-family: var(--font);
+    color: var(--text-color);
+}
+
+.introduction h1{
+    text-align: center;
+    margin: 5rem 0;
+}
+
+.interactive_container{
+    background: var(--box-color);
+    width: 80%;
+    height: 75vh;
+    margin: auto;
+    border-radius: var(--border-radius);
+}
+
+.cta_text{
+    text-align: center;
+    padding: 3rem 0;
 }
