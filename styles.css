@@ -24,7 +24,7 @@ body{
     margin: 5rem 0;
 }
 
-.interactive_container{
+#interactive_container{
     background: var(--box-color);
     width: 80%;
     height: 75vh;
