@@ -8,7 +8,10 @@
     --text-color: #D9D5D5;
     --box-color: #262323;
     --cta-button: #DEA96D;
+    --hover: #b68854;
     --save-button: #548150;
+    --font-size: 1.2em;
+    --font-weight: 600;
     --info-boxes: #AA9B93;
     --border-radius: 14px;
 }
@@ -27,7 +30,7 @@ body{
 #interactive_container{
     background: var(--box-color);
     width: 80%;
-    height: 75vh;
+    height: 70vh;
     margin: auto;
     border-radius: var(--border-radius);
 }
@@ -35,4 +38,28 @@ body{
 .cta_text{
     text-align: center;
     padding: 3rem 0;
+}
+
+.cta_button{
+    position: absolute;
+    top: 55%;
+    left: 50%;
+    -webkit-transform: translateX(-50%);
+    -moz-transform: translateX(-50%);
+    transform: translateX(-50%);
+}
+
+.cta_button button{
+    padding: 1rem;
+    font-size: var(--font-size);
+    font-family: var(--font);
+    background: var(--cta-button);
+    border-radius: var(--border-radius);
+    font-weight: var(--font-weight);
+    border: none;
+}
+
+.cta_button button:hover{
+    background: var(--hover);
+    transition: 0.2s;
 }
