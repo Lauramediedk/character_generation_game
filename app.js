@@ -40,24 +40,24 @@ showElementAfterDelay("interactive_container", totalTypingTime);
 const wizard = {
     'name': 'Gavrel the seer',
     'class': 'Wizard',
-    'Abillities': 'Echantment, Mind manipulation, Fire spells',
-    'History': '...',
+    'abillities': 'Echantment, Mind manipulation, Fire spells',
+    'history': '...',
     'imageUrl': 'images/wizard-removebg-preview.png'
 }
 
 const knight = {
     'name': 'Drystan the defender',
     'class': 'Knight',
-    'Abillities': 'Bravery, Hope, Heroic',
-    'History': '...',
+    'abillities': 'Bravery, Hope, Heroic',
+    'history': '...',
     'imageUrl': 'images/knight-removebg-preview.png'
 }
 
 const hunter = {
     'name': 'Leona the Lonebow',
     'class': 'Hunter',
-    'Abillities': 'Precision, Loyal to the wilds, Falcons eye',
-    'History': '...',
+    'abillities': 'Precision, Loyal to the wilds, Falcons eye',
+    'history': '...',
     'imageUrl': 'images/hunter-removebg-preview.png'
 }
 
@@ -87,16 +87,34 @@ function generateCharacter() {
     //That has the index placement in the array.
     const characterInfo = document.createElement("div");
     //Dynamically create a div with the info about a character
-    characterInfo.textContent = `Name: ${randomCharacter.name}, Class: ${randomCharacter.class},
-    Abillities: ${randomCharacter.Abillities}`;
+    characterInfo.classList.add('character_info');
+
+    const nameField = document.createElement("p"); //We add a p element for the info, in order to style it
+    nameField.textContent = `Name: ${randomCharacter.name}`; //We then set them to use the correct field/property from our objects
+    characterInfo.appendChild(nameField) //And lasly append/add them to the characterInfo div container
+
+    const classField = document.createElement("p");
+    classField.textContent = `Class: ${randomCharacter.class}`;
+    characterInfo.appendChild(classField)
+
+    const abillityField = document.createElement("p");
+    abillityField.textContent = `Abillity: ${randomCharacter.abillities}`;
+    characterInfo.appendChild(abillityField)
+
+    //Commented out if might be used later(Just a more straightforward version of the above) ->
+    //characterInfo.textContent = `Name: ${randomCharacter.name}, Class: ${randomCharacter.class},
+    //Abillities: ${randomCharacter.Abillities}`;
     //Here we use textContent to return the text content of an element.
     //We simply just add content to the characterInfo, where we use the random generation of a character
     //And dynamically load that objects/that characters info
-    //We add a , between the abillities
+
     const characterImage = document.createElement('img');
+    characterImage.classList.add("character_image"); //Create a class for styling the image
+
     characterImage.src = randomCharacter.imageUrl;
     characterImage.alt = randomCharacter.name;
     //We simply just make a new dynamic element, an img tag and provide it the img and an alt text.
+
     const characterContainer = document.getElementById('character_container');
     characterContainer.innerHTML = ""; //Clear the container to avoid overlapping elements
     characterContainer.appendChild(characterInfo);

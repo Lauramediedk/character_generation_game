@@ -41,12 +41,7 @@ body{
 }
 
 .cta_button{
-    position: absolute;
-    top: 55%;
-    left: 50%;
-    -webkit-transform: translateX(-50%);
-    -moz-transform: translateX(-50%);
-    transform: translateX(-50%);
+    text-align: center;
 }
 
 .cta_button button{
@@ -62,4 +57,21 @@ body{
 .cta_button button:hover{
     background: var(--hover);
     transition: 0.2s;
+}
+
+#character_container{
+    display: flex;
+    justify-content: center;
+}
+
+.character_info p{
+    background: var(--info-boxes);
+    margin: 1em;
+    padding: 1em;
+    border-radius: var(--border-radius);
+}
+
+.character_image{
+    background: var(--info-boxes);
+    border-radius: var(--border-radius);
 }
