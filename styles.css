@@ -16,6 +16,12 @@
     --border-radius: 14px;
 }
 
+button{
+    font-family: var(--font);
+    font-weight: var(--font-weight);
+    font-size: var(--font-size);
+}
+
 body{
     background-image: url(images/background.png);
     font-family: var(--font);
@@ -24,13 +30,13 @@ body{
 
 .introduction h1{
     text-align: center;
-    margin: 5rem 0;
+    margin: 5rem 0 2rem 0;
 }
 
 #interactive_container{
     background: var(--box-color);
     width: 80%;
-    height: 70vh;
+    height: 100%;
     margin: auto;
     border-radius: var(--border-radius);
 }
@@ -62,12 +68,21 @@ body{
 #character_container{
     display: flex;
     justify-content: center;
+    padding: 2rem 0;
 }
 
 .character_info p{
     background: var(--info-boxes);
     margin: 1em;
     padding: 1em;
+    border-radius: var(--border-radius);
+}
+
+.character_info button{
+    background: var(--save-button);
+    margin: 1rem;
+    padding: 1rem 2rem;
+    border: none;
     border-radius: var(--border-radius);
 }
 

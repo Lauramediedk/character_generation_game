@@ -101,6 +101,10 @@ function generateCharacter() {
     abillityField.textContent = `Abillity: ${randomCharacter.abillities}`;
     characterInfo.appendChild(abillityField)
 
+    const saveButton = document.createElement("button");
+    saveButton.textContent = "Save character";
+    characterInfo.appendChild(saveButton);
+
     //Commented out if might be used later(Just a more straightforward version of the above) ->
     //characterInfo.textContent = `Name: ${randomCharacter.name}, Class: ${randomCharacter.class},
     //Abillities: ${randomCharacter.Abillities}`;
