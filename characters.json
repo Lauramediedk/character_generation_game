@@ -1,0 +1,25 @@
+[
+    {
+        "name": "Gavrel the seer",
+        "class": "Wizard",
+        "abillities": "Echantment, Mind manipulation, Fire spells",
+        "history": "...",
+        "imageUrl": "images/wizard-removebg-preview.png"
+    },
+
+    {
+        "name": "Drystan the defender",
+        "class": "Knight",
+        "abillities": "Bravery, Hope, Heroic",
+        "history": "...",
+        "imageUrl": "images/knight-removebg-preview.png"
+    },
+
+    {
+        "name": "Leona the Lonebow",
+        "class": "Hunter",
+        "abillities": "Precision, Loyal to the wilds, Falcons eye",
+        "history": "...",
+        "imageUrl": "images/hunter-removebg-preview.png"
+    }
+]

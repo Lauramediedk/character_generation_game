@@ -89,4 +89,5 @@ body{
 .character_image{
     background: var(--info-boxes);
     border-radius: var(--border-radius);
+    max-height: 300px;
 }

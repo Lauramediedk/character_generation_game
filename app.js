@@ -25,7 +25,7 @@ function showElementAfterDelay(elementId, delay) { //Funktion hvor vi displayer 
     //Den tager to argumenter, som vi udfylder senere
     setTimeout(() => {
         document.getElementById(elementId).style.display = 'block';
-    }, delay + 600);
+    }, delay + 850);
 }
 
 const totalTypingTime = typewriterText.length * typingSpeed; //Udregning af samlet tid for typewriter-effekten
